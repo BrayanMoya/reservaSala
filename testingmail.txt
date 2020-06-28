@@ -1,0 +1,4 @@
+//ejecutar php artisan tinker y copiar el siguiente codigo cambiando la dirección de destino
+Mail::send('welcome', [], function($message) {
+    $message->to('kevin.rodriguez@aseoregional.com')->subject('Testing mails'); 
+});

@@ -1,0 +1,10 @@
+Archivos necesarios para la integración con academusoft:
+
+Ruta de archivo: vendor/laravel/framework/src/illuminate/Auth
+SessiongGuard.php --archivo fundamental para la integración con academusoft
+
+Ruta de archivo: vendor/laravel/framework/src/illuminate/Foundation/Auth/
+ResetsPasswords.php --archivo fundamental para la integración con academusoft
+
+Ruta de archivo: vendor/laravel/framework/src/Illuminate/Foundation/Auth
+AuthenticatesUsers.php

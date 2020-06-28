@@ -1,0 +1,91 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+	class TableUsersSeeder extends Seeder {
+
+		public function run() {
+
+            $this->command->info('--- Creación de Usuarios prueba');
+            //Admin
+            \DB::table('USERS')->insert( array(
+                'name' => 'Admin',
+                'username' => 'admin',
+                'email' => 'hectorg0g@gmail.com',
+                'password'  => \Hash::make('zxcvbnm1@'),
+                'ROLE_ID' => reservas\Rol::where('ROLE_ROL','admin')->get()->first()->ROLE_ID,
+                'USER_CREADOPOR' => 'SYSTEM',
+                'USER_FECHACREADO' => \Carbon\Carbon::now()->toDateTimeString(),
+            ));
+
+            //Editores
+            \DB::table('USERS')->insert( array(
+                'name' => 'Editor 1 de prueba',
+                'username' => 'editor1',
+                'email' => 'editor1@correo.com',
+                'password'  => \Hash::make('123'),
+                'ROLE_ID' => reservas\Rol::where('ROLE_ROL','editor')->get()->first()->ROLE_ID,
+                'USER_CREADOPOR' => 'admin',
+                'USER_FECHACREADO' => \Carbon\Carbon::now()->toDateTimeString(),
+            ));
+						/*
+            \DB::table('USERS')->insert( array(
+                'name' => 'Editor 2 de prueba',
+                'username' => 'editor2',
+                'email' => 'editor2@correo.com',
+                'password'  => \Hash::make('123'),
+                'ROLE_ID' => reservas\Rol::where('ROLE_ROL','editor')->get()->first()->ROLE_ID,
+                'USER_CREADOPOR' => 'admin',
+                'USER_FECHACREADO' => \Carbon\Carbon::now()->toDateTimeString(),
+            ));
+*/
+/*
+            //Estudiantes
+            \DB::table('USERS')->insert( array(
+                'name' => 'Estudiante 1 de prueba',
+                'username' => 'estudiante1',
+                'email' => 'estudiante1@correo.com',
+                'password'  => \Hash::make('123'),
+                'ROLE_ID' => reservas\Rol::where('ROLE_ROL','estudiante')->get()->first()->ROLE_ID,
+                'USER_CREADOPOR' => 'admin',
+                'USER_FECHACREADO' => \Carbon\Carbon::now()->toDateTimeString(),
+            ));
+            \DB::table('USERS')->insert( array(
+                'name' => 'Estudiante 2 de prueba',
+                'username' => 'estudiante2',
+                'email' => 'estudiante2@correo.com',
+                'password'  => \Hash::make('123'),
+                'ROLE_ID' => reservas\Rol::where('ROLE_ROL','estudiante')->get()->first()->ROLE_ID,
+                'USER_CREADOPOR' => 'admin',
+                'USER_FECHACREADO' => \Carbon\Carbon::now()->toDateTimeString(),
+            ));
+*/
+            //Docentes
+            \DB::table('USERS')->insert( array(
+                'name' => 'Docentes UNIAJC',
+                'username' => 'docenteuniajc',
+                'email' => 'hectorg_g@hotmail.es',
+                'password'  => \Hash::make('zxcvbnm1@'),
+                'ROLE_ID' => reservas\Rol::where('ROLE_ROL','docente')->get()->first()->ROLE_ID,
+                'USER_CREADOPOR' => 'SYSTEM',
+                'USER_FECHACREADO' => \Carbon\Carbon::now()->toDateTimeString(),
+            ));
+						/*
+            \DB::table('USERS')->insert( array(
+                'name' => 'Docente 2 de prueba',
+                'username' => 'docente2',
+                'email' => 'docente2@correo.com',
+                'password'  => \Hash::make('123'),
+                'ROLE_ID' => reservas\Rol::where('ROLE_ROL','docente')->get()->first()->ROLE_ID,
+                'USER_CREADOPOR' => 'admin',
+                'USER_FECHACREADO' => \Carbon\Carbon::now()->toDateTimeString(),
+            ));
+*/
+            //5 usuarios faker
+            //$USERS = factory(reservas\User::class)->times(5)->create();
+
+            $this->command->info('--- Fin Creación de Usuarios prueba');
+		}
+
+
+	}
