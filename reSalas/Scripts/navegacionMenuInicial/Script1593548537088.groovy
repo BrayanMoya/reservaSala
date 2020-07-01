@@ -31,7 +31,5 @@ WebUI.click(findTestObject('Object Repository/navMI/Page_Reservas/a_SEDE ESTACIN
 
 WebUI.click(findTestObject('Object Repository/navMI/Page_Reservas/a_SEDE SUR'))
 
-WebUI.click(findTestObject('Object Repository/navMI/Page_Reservas/button_Reservar'))
-
 WebUI.closeBrowser()
 
