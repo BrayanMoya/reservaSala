@@ -27,9 +27,6 @@ WebUI.click(findTestObject('Object Repository/verRE/Page_Reservas/button_Iniciar
 
 WebUI.click(findTestObject('Object Repository/verRE/Page_Reservas/a_Mis Reservas'))
 
-WebUI.setText(findTestObject('Object Repository/verRE/Page_Reservas  Autorizar Reservas/input_Buscar_form-control input-sm'), 
-    'asd')
-
 WebUI.selectOptionByValue(findTestObject('Object Repository/verRE/Page_Reservas  Autorizar Reservas/select_510152550100'), 
     '10', true)
 
