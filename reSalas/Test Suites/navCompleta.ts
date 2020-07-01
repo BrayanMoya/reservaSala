@@ -23,12 +23,6 @@
       <testCaseId>Test Cases/navegacionMenuInicial</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>343a8144-3f38-4407-adeb-674311c36ac2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/navegacionReservaSala</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>09ca0e9c-e5b0-46ef-a1a5-52d7ce246e8b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
