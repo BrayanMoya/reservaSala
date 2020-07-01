@@ -27,8 +27,6 @@ WebUI.click(findTestObject('Object Repository/navSD/Page_Reservas/button_Iniciar
 
 WebUI.click(findTestObject('Object Repository/navSD/Page_Reservas/a_Salas Disponibles'))
 
-WebUI.click(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/span_Filtrar resultados'))
-
 WebUI.setText(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/input_Buscar_form-control input-sm'), 
     'sur')
 
