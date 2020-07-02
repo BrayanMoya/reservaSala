@@ -15,35 +15,39 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://smartcampus.uniajc.edu.co:10080/reservaSalas/login')
 
-WebUI.setText(findTestObject('Object Repository/navSD/Page_Reservas/input_Usuario_username'), 'cabolaños')
+WebUI.setText(findTestObject('Object Repository/navSD2/Page_Reservas/input_Usuario_username'), 'cabolaños')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/navSD/Page_Reservas/input_Contrasea_password'), 'iGDxf8hSRT4=')
+WebUI.setEncryptedText(findTestObject('Object Repository/navSD2/Page_Reservas/input_Contrasea_password'), 'iGDxf8hSRT4=')
 
-WebUI.click(findTestObject('Object Repository/navSD/Page_Reservas/button_Iniciar sesin'))
+WebUI.click(findTestObject('Object Repository/navSD2/Page_Reservas/button_Iniciar sesin'))
 
-WebUI.click(findTestObject('Object Repository/navSD/Page_Reservas/a_Salas Disponibles'))
+WebUI.click(findTestObject('Object Repository/navSD2/Page_Reservas/a_Salas Disponibles'))
 
-WebUI.click(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/a_Siguiente'))
+WebUI.setText(findTestObject('Object Repository/navSD2/Page_Reservas  Consulta Salas Disponibles/input_Buscar_form-control input-sm'), 
+    'sur')
 
-WebUI.click(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/a_Anterior'))
+WebUI.click(findTestObject('Object Repository/navSD2/Page_Reservas  Consulta Salas Disponibles/a_Siguiente'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
+WebUI.click(findTestObject('Object Repository/navSD2/Page_Reservas  Consulta Salas Disponibles/a_Anterior'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/navSD2/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
     '10', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/navSD2/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
     '15', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/navSD2/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
     '25', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/navSD2/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
     '50', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/navSD/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/navSD2/Page_Reservas  Consulta Salas Disponibles/select_510152550100'), 
     '100', true)
 
 WebUI.closeBrowser()
